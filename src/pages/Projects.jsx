@@ -5,7 +5,7 @@ import {
 
 function Projects() {
     return (
-        <div style={{ width: "80%", margin: "auto" }}>
+        <div style={{ width: "85%", margin: "auto" }}>
             <Typography
                 variant="h3"
                 color="textSecondary"

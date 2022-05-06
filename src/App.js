@@ -1,4 +1,5 @@
 import React from 'react';
+import { grey } from '@mui/material/colors';
 
 // import components
 import SideBar from './components/SideBar';
@@ -10,6 +11,7 @@ import Skills from './pages/Skills';
 import Courses from './pages/Courses';
 import Publications from './pages/Publications';
 import Adventures from './pages/Adventures';
+import ScrollToTop from './components/ScrollToTop';
 
 import {
   HashRouter,
@@ -23,20 +25,22 @@ import {
 } from '@mui/material';
 
 function App() {
+  // default padding: 24px
+
   return (
     <HashRouter>
-      <div>
-
+      <ScrollToTop />
+      <div style={{ backgroundColor: grey[100] }}>
         <Box sx={{ display: 'flex' }}>
           <SideBar />
           <Box component="main" sx={{ flexGrow: 1, p: 3, bgcolor: "x333333" }} >
             <Switch>
-              <Redirect exact path="/" to="/my-story" />
-              <Route path="/my-story" render={() => <MyStory />} />
-              <Route path="/projects" render={() => <Projects />}/>
+              <Redirect exact path="/" to="/about-me" />
+              <Route path="/about-me" render={() => <MyStory />} />
+              <Route path="/projects" render={() => <Projects />} />
               <Route path="/skills" render={() => <Skills />} />
               <Route path="/courses" render={() => <Courses />} />
-              <Route path="/publications" render={() => <Publications />}  />
+              <Route path="/publications" render={() => <Publications />} />
               <Route path="/adventures" render={() => <Adventures />} />
             </Switch>
 

@@ -17,8 +17,8 @@ export default function SideBar() {
 
     const menuItems = [
         {
-            text: 'My Story',
-            path: '/my-story'
+            text: 'About Me',
+            path: '/about-me'
         },
         {
             text: 'Projects',

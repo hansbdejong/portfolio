@@ -104,3 +104,56 @@ function SideBar() {
 
 
 export default SideBar;
+
+
+let accordion = (
+    <Accordion elevation={0} defaultExpanded={isExpanded} disableGutters>
+    <AccordionSummary sx={{ backgroundColor: grey[200], border: `1px solid ${grey[300]}` }}
+        expandIcon={<ExpandMoreIcon />}
+    >
+        <Typography variant="h6"
+            sx={{ color: '#212529' }}>
+            CIS 521 Artificial Intelligence
+        </Typography>
+    </AccordionSummary>
+
+    <AccordionDetails sx={{ backgroundColor: grey[50], color: '#212529', border: `1px solid ${grey[200]}` }}>
+        This course investigates algorithms to implement resource-limited knowledge-based agents which sense and act in the world. Topics include, search, machine learning, probabilistic reasoning, natural language processing, knowledge representation and logic. After a brief introduction to the language, programming assignments will be in Python.
+
+    </AccordionDetails>
+</Accordion>
+
+
+<div>
+
+
+<div style={{
+    background: `url(${profilePic}) no-repeat center`,
+    backgroundSize: "100% auto",
+    padding: 0,
+    height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+}}>
+
+    <div>
+        <Typography style={{textShadow: "5px 5px 5px rgba(0, 0, 0, 0.3)", 
+            color: "white"}}
+            variant="h1"
+            align='center'
+            gutterBottom
+        >
+            Hans B DeJong, PhD
+        </Typography>
+
+    </div>
+
+
+
+</div >
+
+
+
+Blah Blah Blah
+</div>
