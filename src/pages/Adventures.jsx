@@ -62,7 +62,7 @@ function createVideoCards() {
                     </div>
                 </div>
 
-                {i < (data.length - 1) ? <Divider sx={{ borderBottomWidth: 2, paddingBottom: 5 }} /> : null}
+                {i < (data.length - 1) ? <Divider sx={{ borderBottomWidth: 1, paddingBottom: 5 }} /> : null}
             </div>
         )
         cards.push(card);

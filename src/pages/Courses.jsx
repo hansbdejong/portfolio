@@ -99,8 +99,8 @@ function Courses() {
                 sx={{ fontSize: 20, color: '#212529' }}
                 gutterBottom
             >
-                <p>I am currently pursuing my masters in Computer and Information Technology (MCIT) at the <span style={{ fontWeight: '600' }}>University of Pennsylvania</span>. I am also taking graduate level computer science courses for credit through <span style={{ fontWeight: '600' }}>Stanford University</span> to strengthen my knowledge and skills.</p>
-                <p>I have thoroughly enjoyed the coursework so far and have recieved top grades (A or A+) in all courses.</p>
+               
+                <p>I have thoroughly enjoyed studying Computer Science and have recieved top grades (A/A+) in all courses.</p>
             </Typography>
 
             {createAccordions()}
@@ -110,3 +110,5 @@ function Courses() {
 }
 
 export default Courses;
+
+//<p>I am currently pursuing my masters in Computer and Information Technology (MCIT) at the <span style={{ fontWeight: '600' }}>University of Pennsylvania</span>. I am also taking graduate level computer science courses for credit through <span style={{ fontWeight: '600' }}>Stanford University</span> to strengthen my knowledge and skills.</p>
