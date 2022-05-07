@@ -47,7 +47,7 @@ export default function SideBar() {
     const location = useLocation();
     const history = useHistory()
 
-    let drawerWidth = 350;
+    let drawerWidth = 300;
     return (
         <Drawer
             variant="permanent"
@@ -65,21 +65,22 @@ export default function SideBar() {
                         style={{
                             // borderRadius: "100%",
                             objectFit: "cover",
-                            marginTop: "45px",
-                            border: `5px solid ${grey[400]}`
+                            marginTop: "30px",
+                            border: `3px solid ${grey[400]}`
                         }}
                         loading="lazy"
-                        height="250"
-                        width="250"
+                        height="220"
+                        width="220"
                         src={profilePic}
                     />
                 </div>
 
-                <Typography variant="h5" align="center"
+                <Typography variant="h5" 
                     style={{
                         paddingTop: "10px",
                         color: grey[200], textShadow: "2px 2px 3px rgba(0, 0, 0, 0.3)",
-                        fontSize: "30px"
+                        fontSize: "24px",
+                        marginLeft: "37px"
                     }}>
                     Hans B DeJong
                 </Typography>
@@ -89,7 +90,7 @@ export default function SideBar() {
                     {menuItems.map((item =>
                         <ListItem button disableRipple
 
-                            style={{ paddingLeft: "45px", color: "#999999" }}
+                            style={{ paddingLeft: "37px", color: "#999999" }}
                             onClick={() => history.push(item.path)}
                             sx={{
                                 '&:hover': {
@@ -98,7 +99,9 @@ export default function SideBar() {
                             }}
                         >
                             <Typography
-                                className={location.pathname === item.path ? "myClass" : null} variant="h6">
+                                className={location.pathname === item.path ? "myClass" : null} 
+                                variant="body1"
+                                fontSize="18px">
                                 {item.text}
                             </Typography>
                         </ListItem>

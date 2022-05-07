@@ -57,8 +57,8 @@ function createPubCards() {
         let card = (
             <div>
                 <Typography
-                    variant="h5"
-                    sx={{ color: '#212529', paddingTop: 4 }}
+                    variant="h6"
+                    sx={{ color: '#212529', paddingTop: 3, fontSize: 18 }}
                 >
                     <Link className="my-link" color="#212529" rel="noopener" href={data[i].url} target="_blank" underline="none">
                         {data[i].title}
@@ -67,14 +67,12 @@ function createPubCards() {
 
                 <Typography
                     variant="body1"
-                    sx={{ fontSize: 20 }}
                     color="textSecondary"
                 >
                     {data[i].authors}
                 </Typography>
                 <Typography
                     variant="body1"
-                    sx={{ fontSize: 20 }}
                     color="textSecondary"
                 >
                     {`${data[i].journal}, ${data[i].year}`}
@@ -85,7 +83,7 @@ function createPubCards() {
                         <Link sx={{ marginRight: 1 }} rel="noopener" href={data[i].codeUrl} target="_blank" underline="none">
                             <Button disableRipple style={{ textTransform: 'none' }}>
                                 <GitHubIcon fontSize="medium" />
-                                <Typography sx={{ fontSize: 18, paddingLeft: 0.5 }}>GitHub Repo</Typography>
+                                <Typography sx={{ paddingLeft: 0.5 }}>GitHub Repo</Typography>
                             </Button>
                         </Link>
                     ) : null}
@@ -96,7 +94,7 @@ function createPubCards() {
                             style={{ textTransform: 'none', marginLeft: 0 }}
                         >
                             <ArticleIcon fontSize="medium" />
-                            <Typography sx={{ fontSize: 18, paddingLeft: 0.5 }}>Publication</Typography>
+                            <Typography sx={{ paddingLeft: 0.5 }}>Publication</Typography>
                         </Button>
                     </Link>
                
@@ -112,10 +110,10 @@ function Publications() {
     return (
 
         <div style={{ width: "85%", margin: "auto", paddingBottom: "60px" }}>
-            <Typography
-                variant="h2"
+               <Typography
+                variant="h3"
                 align='center'
-                sx={{ color: '#212529' }}
+                sx={{ color: '#212529', fontWeight: 300 }}
             >
                 Publications
             </Typography>

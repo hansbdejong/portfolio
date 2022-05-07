@@ -64,12 +64,12 @@ function createAccordions() {
                     expandIcon={<ExpandMoreIcon />}
                 >
                     <Typography variant="h6"
-                        sx={{ color: '#212529', fontSize: 24 }}>
+                        sx={{ color: '#212529', fontSize: 18 }}>
                         {courses[i].title}
                     </Typography>
                 </AccordionSummary>
 
-                <AccordionDetails sx={{ fontSize: 20, color: "#00000099", paddingBottom: 6 }}>
+                <AccordionDetails sx={{ color: "#00000099", paddingBottom: 6 }}>
                     {courses[i].description}
                 </AccordionDetails>
             </Accordion>
@@ -86,20 +86,20 @@ function Courses() {
     return (
         <div style={{ width: "85%", margin: "auto", paddingBottom: "60px" }}>
             <Typography
-                variant="h2"
+                variant="h3"
                 align='center'
                 gutterBottom
-                sx={{ color: '#212529' }}
+                sx={{ color: '#212529', fontWeight: 300 }}
             >
                 Courses
             </Typography>
 
             <Typography
                 variant="body1"
-                sx={{ fontSize: 20, color: '#212529' }}
+                sx={{ color: '#212529' }}
                 gutterBottom
             >
-               
+
                 <p>I have thoroughly enjoyed studying Computer Science and have recieved top grades (A/A+) in all courses.</p>
             </Typography>
 

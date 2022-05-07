@@ -33,7 +33,7 @@ function createVideoCards() {
         let card = (
             <div>
                 <Typography
-                    variant="h5"
+                    variant="h6"
                     sx={{ color: '#212529', paddingTop: 5 }}
                 >
                     {data[i].title}
@@ -41,7 +41,7 @@ function createVideoCards() {
 
                 <Typography
                     variant="body1"
-                    sx={{ fontSize: 20, paddingBottom: "20px" }}
+                    sx={{ paddingBottom: "20px" }}
                     color="textSecondary"
                 >
                     {data[i].description}
@@ -75,9 +75,9 @@ function Adventures() {
     return (
         <div style={{ width: "85%", margin: "auto", paddingBottom: "60px" }}>
             <Typography
-                variant="h2"
+                variant="h3"
                 align='center'
-                sx={{ color: '#212529' }}
+                sx={{ color: '#212529', fontWeight: 300 }}
             >
                 Adventures
             </Typography>

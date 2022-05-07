@@ -2,7 +2,6 @@ import React from 'react';
 import {
     Typography,
     Button,
-    Chip,
     Link
 } from '@mui/material';
 import diving from '../images/about-diving.jpg'; // with import
@@ -24,10 +23,10 @@ function MyStory() {
     return (
         <div style={{ width: "85%", margin: "auto", paddingBottom: "60px" }}>
             <Typography
-                variant="h2"
+                variant="h3"
                 align='center'
                 gutterBottom
-                sx={{ color: '#212529' }}
+                sx={{ color: '#212529', fontWeight: 300 }}
             >
                 About Me
             </Typography>
@@ -37,8 +36,8 @@ function MyStory() {
             <div>
                 <Link rel="noopener" href="https://www.linkedin.com/in/hansbdejong/" target="_blank" underline="none">
                     <Button disableRipple style={{ textTransform: 'none' }}>
-                        <LinkedInIcon fontSize="large" />
-                        <Typography sx={{ fontSize: 18, paddingLeft: 0.5 }}>LinkedIn</Typography>
+                        <LinkedInIcon fontSize="medium" />
+                        <Typography sx={{  paddingLeft: 0.5 }}>LinkedIn</Typography>
                     </Button>
                 </Link>
 
@@ -46,22 +45,22 @@ function MyStory() {
                     <Button disableRipple
                         style={{ textTransform: 'none' }}
                     >
-                        <ArticleIcon fontSize="large" />
-                        <Typography sx={{ fontSize: 18, paddingLeft: 0.5 }}>Resume</Typography>
+                        <ArticleIcon fontSize="medium" />
+                        <Typography sx={{  paddingLeft: 0.5 }}>Resume</Typography>
                     </Button>
                 </Link>
 
                 <Link sx={{ marginLeft: 1 }} rel="noopener" href="https://github.com/hansbdejong" target="_blank" underline="none">
                     <Button disableRipple style={{ textTransform: 'none' }}>
-                        <GitHubIcon fontSize="large" />
-                        <Typography sx={{ fontSize: 18, paddingLeft: 0.5 }}>GitHub</Typography>
+                        <GitHubIcon fontSize="medium" />
+                        <Typography sx={{ paddingLeft: 0.5 }}>GitHub</Typography>
                     </Button>
                 </Link>
 
                 <Link sx={{ marginLeft: 1 }} rel="noopener" href="https://scholar.google.com/citations?user=7KRThrQAAAAJ&hl=en" target="_blank" underline="none">
                     <Button disableRipple style={{ textTransform: 'none' }}>
-                        <GoogleIcon fontSize="large" />
-                        <Typography sx={{ fontSize: 18, paddingLeft: 0.5 }}>Google Scholar</Typography>
+                        <GoogleIcon fontSize="medium" />
+                        <Typography sx={{ paddingLeft: 0.5 }}>Google Scholar</Typography>
                     </Button>
                 </Link>
             </div>
@@ -70,7 +69,7 @@ function MyStory() {
 
             <Typography
                 variant="body1"
-                sx={{ fontSize: 20, color: '#212529' }}
+                sx={{ color: '#212529' }}
                 gutterBottom
             >
                 <p>I am a Computer Science master’s student at the <span style={{ fontWeight: 600 }}>University of Pennsylvania</span> and am launching a career change from earth science research to technology.</p>
@@ -83,7 +82,7 @@ function MyStory() {
             <div style={{
                 display: "flex",
                 justifyContent: "space-between",
-                paddingTop: "70px",
+                paddingTop: "50px",
             }}>
                 <img
                     alt=""
