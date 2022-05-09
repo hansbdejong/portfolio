@@ -96,7 +96,7 @@ function Courses() {
 
             <Typography
                 variant="body1"
-                sx={{ color: '#212529' }}
+                sx={{ color: '#212529', fontSize: "18px" }}
                 gutterBottom
             >
 

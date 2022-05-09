@@ -41,7 +41,7 @@ function createVideoCards() {
 
                 <Typography
                     variant="body1"
-                    sx={{ paddingBottom: "20px" }}
+                    sx={{ paddingBottom: "20px", fontSize: "18px" }}
                     color="textSecondary"
                 >
                     {data[i].description}

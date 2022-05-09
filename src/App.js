@@ -12,6 +12,7 @@ import Courses from './pages/Courses';
 import Publications from './pages/Publications';
 import Adventures from './pages/Adventures';
 import ScrollToTop from './components/ScrollToTop';
+import PhotoApp from './pages/PhotoApp';
 
 import {
   HashRouter,
@@ -37,6 +38,7 @@ function App() {
             <Switch>
               <Redirect exact path="/" to="/about-me" />
               <Route path="/about-me" render={() => <MyStory />} />
+              <Route path="/projects/photo-app" render={() => <PhotoApp />} />
               <Route path="/projects" render={() => <Projects />} />
               <Route path="/skills" render={() => <Skills />} />
               <Route path="/courses" render={() => <Courses />} />
