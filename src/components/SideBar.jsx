@@ -89,7 +89,7 @@ export default function SideBar() {
 
                     {menuItems.map((item =>
                         <ListItem button disableRipple
-
+                            key = {item.text}
                             style={{ paddingLeft: "37px", color: "#999999" }}
                             onClick={() => history.push(item.path)}
                             sx={{

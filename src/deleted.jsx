@@ -1,159 +1,231 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import {
-    Drawer,
-    List,
-    ListItem,
-    Box,
-    Typography
+    Typography,
+    Paper
 } from '@mui/material';
-import { grey, blue } from '@mui/material/colors';
-import profilePic from '../images/Hans.jpg'; // with import
+
+// others to add - GDB, editors such as VIM, VsCode...
+
+import html from '../images/logos/html-logo.png';
+import css from '../images/logos/css-logo.png';
+import javascript from '../images/logos/Javascript-logo.png';
+import reactLogo from '../images/logos/React-logo.png'
+import reactRouter from '../images/logos/react-router-logo.jpg'
+import nodeLogo from '../images/logos/nodejs-logo.png'
+import D3 from '../images/logos/D3-logo.png'
+import mui from '../images/logos/mui-logo.png'
+import leaflet from '../images/logos/Leaflet-logo.png'
+import charts from '../images/logos/chartsjs-logo.png'
+import bootstrap from '../images/logos/bootstrap-logo.png'
+import git from '../images/logos/git-logo.png'
+import mongodb from '../images/logos/mongoDB-logo.jpg'
+import awsrds from '../images/logos/AWS-RDS-logo.png'
+import neo4j from '../images/logos/neo4j-logo.png'
+import mysql from '../images/logos/sql-logo.jpg'
+import java from '../images/logos/java-logo.jpg';
+import cpp from '../images/logos/cpp-logo.png';
+import go from '../images/logos/golang-logo.png';
+import python from '../images/logos/python-logo.png';
+import numpy from '../images/logos/numpy-logo.png';
+import pandas from '../images/logos/Pandas_logo.png';
+import jupyter from '../images/logos/jupyter-logo.png';
+import fortran from '../images/logos/fortran-logo.png';
+import matlab from '../images/logos/MATLAB-logo.png';
+import r from '../images/logos/R-logo.png';
+import arduino from '../images/logos/arduino-logo.png';
+import docker from '../images/logos/docker-logo.png';
+
+let logos = [
+    {
+        logo: html,
+        text: "HTML"
+    },
+    {
+        logo: css,
+        text: "CSS"
+    },
+    {
+        logo: javascript,
+        text: "JavaScript"
+    },
+    {
+        logo: reactLogo,
+        text: "React"
+    },
+    {
+        logo: reactRouter,
+        text: "React Router"
+    },
+    {
+        logo: nodeLogo,
+        text: "Node.js"
+    },
+    {
+        logo: D3,
+        text: "D3.js"
+    },
+    {
+        logo: mui,
+        text: "Material UI"
+    },
+    {
+        logo: leaflet,
+        text: "Leaflet"
+    },
+    {
+        logo: charts,
+        text: "Charts.js"
+    },
+    {
+        logo: bootstrap,
+        text: "Bootstrap"
+    },
+    {
+        logo: git,
+        text: "Git"
+    },
+    {
+        logo: awsrds,
+        text: "AWS RDS"
+    },
+    {
+        logo: mongodb,
+        text: "MongoDB"
+    },
+    {
+        logo: neo4j,
+        text: "Neo4j"
+    },
+    {
+        logo: mysql,
+        text: "MySQL"
+    },
+    {
+        logo: java,
+        text: "Java"
+    },
+    {
+        logo: cpp,
+        text: "C++"
+    }, 
+    {
+        logo: go,
+        text: "Golang"
+    },
+    {
+        logo: python,
+        text: "Python"
+    },
+    {
+        logo: numpy,
+        text: "NumPy"
+    },
+    {
+        logo: pandas,
+        text: "Pandas"
+    },
+    {
+        logo: jupyter,
+        text: "Jupyter"
+    },
+    {
+        logo: fortran,
+        text: "Fortran"
+    },
+    {
+        logo: matlab,
+        text: "MATLAB"
+    },
+    {
+        logo: r,
+        text: "R"
+    },
+    {
+        logo: arduino,
+        text: "Arduino"
+    },
+    {
+        logo: docker,
+        text: "Docker"
+    }
+
+
+]
 
 
 
-function SideBar() {
 
-    // another color idea: "#1164A3"
+function createLogos() {
+    let logosArr = []
+    for (let i = 0; i < logos.length; i++) {
+        let logo = (
+            <div>
+                <img
+                    alt=""
+                    // style={{
+                    //     objectFit: "cover",
+                    // }}
+                    loading="lazy"
+                    width="100%"
+                    src={logos[i].logo}
+                />
+                <Typography
+                    variant="body1"
+                    align="center"
+                    sx={{ fontSize: 18, color: '#00000099' }}
 
-    let drawerWidth = 350;
-    return (
-        <Drawer
-            variant="permanent"
-            sx={{
-                width: drawerWidth,
-                flexShrink: 0,
-                [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
-            }}
-        >
-            <Box sx={{ overflow: 'auto', bgcolor: "#282C34" }} style={{ height: "100%" }}>
-
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                    <img
-                        alt=""
-                        style={{
-                            // borderRadius: "100%",
-                            objectFit: "cover",
-                            marginTop: "45px",
-                            border: `5px solid ${grey[400]}`
-                        }}
-                        loading="lazy"
-                        height="250"
-                        width="250"
-                        src={profilePic}
-                    />
-                </div>
-
-                <Typography variant="h5" align="center"
-                    style={{
-                        paddingTop: "10px",
-                        color: grey[200], textShadow: "2px 2px 3px rgba(0, 0, 0, 0.3)",
-                        fontSize: "30px"
-                    }}>
-                    Hans B DeJong
+                >
+                    {logos[i].text}
                 </Typography>
-
-                <List>
-
-                    <ListItem button className="example"
-                        style={{ paddingLeft: "45px", color: "#61DAFB" }}
-                        component={Link}
-                        to={`/world-cups`}
-                        sx = {{'&:hover': {
-                            backgroundColor: '#20232A'
-                          }}}
-                        >
-                        <Typography variant="h6">My Story</Typography>
-                    </ListItem>
-
-
-                    <ListItem button style={{ paddingLeft: "45px", color: "#999999" }}
-                        component={Link}
-                        to={`/world-cups`}>
-                        <Typography variant="h6">Projects</Typography>
-                    </ListItem>
-
-                    <ListItem button style={{ paddingLeft: "45px", color: "#999999" }}
-                        component={Link}
-                        to={`/world-cups`}>
-                        <Typography variant="h6">Skills</Typography>
-                    </ListItem>
-
-                    <ListItem button style={{ paddingLeft: "45px", color: "#999999" }}
-                        component={Link}
-                        to={`/world-cups`}>
-                        <Typography variant="h6">Courses</Typography>
-                    </ListItem>
-
-                    <ListItem button style={{ paddingLeft: "45px", color: "#999999" }}
-                        component={Link}
-                        to={`/world-cups`}>
-                        <Typography variant="h6">Publications</Typography>
-                    </ListItem>
-
-                    <ListItem button style={{ paddingLeft: "45px", color: "#999999" }}
-                        component={Link}
-                        to={`/world-cups`}>
-                        <Typography variant="h6">Adventures</Typography>
-                    </ListItem>
-                </List>
-            </Box>
-        </Drawer>
-    );
+            </div>
+        )
+        logosArr.push(logo);
+    }
+    return logosArr;
 }
 
 
-export default SideBar;
+function Skills() {
+    return (
+        <div style={{ width: "85%", margin: "auto", paddingBottom: "60px" }}>
+            <Typography
+                variant="h3"
+                align='center'
+                gutterBottom
+                sx={{ color: '#212529', fontWeight: 300 }}
+            >
+                Skills
+            </Typography>
 
+            <Typography
+                variant="body1"
+                sx={{ color: '#212529', paddingBottom: "40px", fontSize: "18px" }}
 
-let accordion = (
-    <Accordion elevation={0} defaultExpanded={isExpanded} disableGutters>
-    <AccordionSummary sx={{ backgroundColor: grey[200], border: `1px solid ${grey[300]}` }}
-        expandIcon={<ExpandMoreIcon />}
-    >
-        <Typography variant="h6"
-            sx={{ color: '#212529' }}>
-            CIS 521 Artificial Intelligence
-        </Typography>
-    </AccordionSummary>
+            >
+                Over the last few years I have worked with a wide range of technologies for research, personal projects, and coursework. As I have gained more experience, it has become easier and easier to pick up new computer languages and frameworks.
+            </Typography>
 
-    <AccordionDetails sx={{ backgroundColor: grey[50], color: '#212529', border: `1px solid ${grey[200]}` }}>
-        This course investigates algorithms to implement resource-limited knowledge-based agents which sense and act in the world. Topics include, search, machine learning, probabilistic reasoning, natural language processing, knowledge representation and logic. After a brief introduction to the language, programming assignments will be in Python.
-
-    </AccordionDetails>
-</Accordion>
-
-
-<div>
-
-
-<div style={{
-    background: `url(${profilePic}) no-repeat center`,
-    backgroundSize: "100% auto",
-    padding: 0,
-    height: '100vh',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-}}>
-
-    <div>
-        <Typography style={{textShadow: "5px 5px 5px rgba(0, 0, 0, 0.3)", 
-            color: "white"}}
-            variant="h1"
-            align='center'
-            gutterBottom
-        >
-            Hans B DeJong, PhD
-        </Typography>
-
-    </div>
+            <Paper elevation={3}>
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
+                    columnGap: '100px',
+                    rowGap: '50px',
+                    paddingTop: "60px",
+                    paddingBottom: "60px",
+                    paddingLeft: "60px",
+                    paddingRight: "60px"
+                }}>
 
 
 
-</div >
+                    {createLogos()}
 
 
+                </div>
+            </Paper>
+        </div>
+    );
+}
 
-Blah Blah Blah
-</div>
+export default Skills;

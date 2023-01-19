@@ -6,6 +6,8 @@ import {
 } from '@mui/material';
 import diving from '../images/about-diving.jpg'; // with import
 import penguins from '../images/about-penguins.jpg'; // with import
+
+
 //import { grey } from '@mui/material/colors';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArticleIcon from '@mui/icons-material/Article';
@@ -69,7 +71,7 @@ function MyStory() {
 
             <Typography
                 variant="body1"
-                sx={{ color: '#212529', fontSize: "18px" }}
+                // sx={{ color: '#212529', fontSize: "16px" }}
                 gutterBottom
             >
                 <p>I am a Computer Science master’s student at the <span style={{ fontWeight: 600 }}>University of Pennsylvania</span> and am launching a career change from earth science research to technology.</p>
@@ -79,7 +81,7 @@ function MyStory() {
                 <p>On the personal front, I was born in the US and grew up in India and Madagascar. I have also lived in Mali and South Korea. I love to go backpacking and play soccer.</p>
             </Typography>
 
-            <div style={{
+            {/* <div style={{
                 display: "flex",
                 justifyContent: "space-between",
                 paddingTop: "50px",
@@ -102,7 +104,7 @@ function MyStory() {
                     src={penguins}
                 />
 
-            </div>
+            </div> */}
         </div>
     );
 }

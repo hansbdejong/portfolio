@@ -34,14 +34,14 @@ function createVideoCards() {
             <div>
                 <Typography
                     variant="h6"
-                    sx={{ color: '#212529', paddingTop: 5 }}
+                    sx={{ color: '#212529', paddingTop: 2 }}
                 >
                     {data[i].title}
                 </Typography>
 
                 <Typography
                     variant="body1"
-                    sx={{ paddingBottom: "20px", fontSize: "18px" }}
+                    sx={{ paddingBottom: "20px"}}
                     color="textSecondary"
                 >
                     {data[i].description}
@@ -62,7 +62,7 @@ function createVideoCards() {
                     </div>
                 </div>
 
-                {i < (data.length - 1) ? <Divider sx={{ borderBottomWidth: 1, paddingBottom: 5 }} /> : null}
+                {i < (data.length - 1) ? <Divider sx={{ borderBottomWidth: 1, paddingTop: 8 }} /> : null}
             </div>
         )
         cards.push(card);
@@ -77,7 +77,7 @@ function Adventures() {
             <Typography
                 variant="h3"
                 align='center'
-                sx={{ color: '#212529', fontWeight: 300 }}
+                sx={{ color: '#212529', fontWeight: 300, pb: 3 }}
             >
                 Adventures
             </Typography>

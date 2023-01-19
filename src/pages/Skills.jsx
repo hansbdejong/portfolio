@@ -1,189 +1,123 @@
 import React from 'react';
 import {
     Typography,
-    Paper
+    Chip,
+    Divider,
+    Paper,
+    List,
+    ListItem
 } from '@mui/material';
 
-// others to add - GDB, editors such as VIM...
+// others to add - GDB, editors such as VIM, VsCode...
 
-import html from '../images/logos/html-logo.png';
-import css from '../images/logos/css-logo.png';
-import javascript from '../images/logos/Javascript-logo.png';
-import reactLogo from '../images/logos/React-logo.png'
-import reactRouter from '../images/logos/react-router-logo.jpg'
-import nodeLogo from '../images/logos/nodejs-logo.png'
-import D3 from '../images/logos/D3-logo.png'
-import mui from '../images/logos/mui-logo.png'
-import leaflet from '../images/logos/Leaflet-logo.png'
-import charts from '../images/logos/chartsjs-logo.png'
-import bootstrap from '../images/logos/bootstrap-logo.png'
-import git from '../images/logos/git-logo.png'
-import mongodb from '../images/logos/mongoDB-logo.jpg'
-import awsrds from '../images/logos/AWS-RDS-logo.png'
-import neo4j from '../images/logos/neo4j-logo.png'
-import mysql from '../images/logos/sql-logo.jpg'
-import java from '../images/logos/java-logo.jpg';
-import cpp from '../images/logos/cpp-logo.png';
-import go from '../images/logos/golang-logo.png';
-import python from '../images/logos/python-logo.png';
-import numpy from '../images/logos/numpy-logo.png';
-import pandas from '../images/logos/Pandas_logo.png';
-import jupyter from '../images/logos/jupyter-logo.png';
-import fortran from '../images/logos/fortran-logo.png';
-import matlab from '../images/logos/MATLAB-logo.png';
-import r from '../images/logos/R-logo.png';
-import arduino from '../images/logos/arduino-logo.png';
-import docker from '../images/logos/docker-logo.png';
+let data = [
+    {
+        title: "Programming Languages",
+        items: ["Java", "Python", "JavaScript", "C++", "C", "MATLAB", "R",
+            "Go", "Arduino", "IDL", "Fortran"]
+    },
+    {
+        title: "Web Development",
+        items: ["HTML", "CSS", "React", "Node.js", "Express", "REST API",
+            "JSON", "DOM", "AJAX", "Material UI",
+            "Bootstrap", "React Router", "D3", "Leaflet.js", "Charts.js"]
+    },
+    {
+        title: "Databases",
+        items: ["SQL", "MongoDB", "Firebase", "Neo4j"]
+    },
+    {
+        title: "Data Science",
+        items: ["Spark", "Pandas", "NumPy", "Matplotlib", "Seaborn",
+            "Scikit-learn", "MxNet"]
+    },
+    {
+        title: "Cloud",
+        items: ["AWS Cloud Practitioner", "RDS", "EC2", "EMR"]
+    },
+    {
+        title: "Tools",
+        items: ["Git", "Vim", "GDB", "Linux Terminal", "LaTex", "JUnit", "Visual Studio", "Eclipse", "IntelliJ"]
+    },
+    {
+        title: "Methodologies",
+        items: ["Reading Documentation", "Agile Development", "TTD (Test Driven Development)",
+            "Modularity", "Design Patterns", "N-Tier architecture",
+            "Scalable Systems"]
+    },
+]
 
-let logos = [
-    {
-        logo: html,
-        text: "HTML"
-    },
-    {
-        logo: css,
-        text: "CSS"
-    },
-    {
-        logo: javascript,
-        text: "JavaScript"
-    },
-    {
-        logo: reactLogo,
-        text: "React"
-    },
-    {
-        logo: reactRouter,
-        text: "React Router"
-    },
-    {
-        logo: nodeLogo,
-        text: "Node.js"
-    },
-    {
-        logo: D3,
-        text: "D3.js"
-    },
-    {
-        logo: mui,
-        text: "Material UI"
-    },
-    {
-        logo: leaflet,
-        text: "Leaflet"
-    },
-    {
-        logo: charts,
-        text: "Charts.js"
-    },
-    {
-        logo: bootstrap,
-        text: "Bootstrap"
-    },
-    {
-        logo: git,
-        text: "Git"
-    },
-    {
-        logo: awsrds,
-        text: "AWS RDS"
-    },
-    {
-        logo: mongodb,
-        text: "MongoDB"
-    },
-    {
-        logo: neo4j,
-        text: "Neo4j"
-    },
-    {
-        logo: mysql,
-        text: "MySQL"
-    },
-    {
-        logo: java,
-        text: "Java"
-    },
-    {
-        logo: cpp,
-        text: "C++"
-    }, 
-    {
-        logo: go,
-        text: "Golang"
-    },
-    {
-        logo: python,
-        text: "Python"
-    },
-    {
-        logo: numpy,
-        text: "NumPy"
-    },
-    {
-        logo: pandas,
-        text: "Pandas"
-    },
-    {
-        logo: jupyter,
-        text: "Jupyter"
-    },
-    {
-        logo: fortran,
-        text: "Fortran"
-    },
-    {
-        logo: matlab,
-        text: "MATLAB"
-    },
-    {
-        logo: r,
-        text: "R"
-    },
-    {
-        logo: arduino,
-        text: "Arduino"
-    },
-    {
-        logo: docker,
-        text: "Docker"
-    }
-
-
+let PhDSkills = [
+    "Ability to learn quickly",
+    "Willingness to work hard and work under pressure",
+    "Ability to work in a collaborative, team-oriented environment",
+    "Communication skills such as explaining, technical writing, and public speaking",
+    "Creativity, resourcefulness, and ability to persevere",
+    "Ability to function independently in a variety of environments and roles; skills to handle ambiguity and differing views",
+    "Expertise in designing, implementing, and managing all phases of complex projects through completion"
 ]
 
 
 
-
-function createLogos() {
-    let logosArr = []
-    for (let i = 0; i < logos.length; i++) {
-        let logo = (
-            <div>
-                <img
-                    alt=""
-                    style={{
-                        objectFit: "cover",
-                    }}
-                    loading="lazy"
-                    width="100%"
-                    src={logos[i].logo}
-                />
-                <Typography
-                    variant="body1"
-                    align="center"
-                    sx={{ fontSize: 18, color: '#00000099' }}
-
-                >
-                    {logos[i].text}
-                </Typography>
-            </div>
+function addPhDSkills() {
+    let skillsArray = []
+    for (let i = 0; i < PhDSkills.length; i++) {
+        let skill = (
+            <ListItem sx={{ display: 'list-item' }} style={{ padding: 0 }}>
+                <Typography variant='body1'>{PhDSkills[i]}</Typography>
+            </ListItem>
         )
-        logosArr.push(logo);
+
+        skillsArray.push(skill);
     }
-    return logosArr;
+
+    return skillsArray;
 }
 
+function addChips(items) {
+    let chips = [];
+    for (let j = 0; j < items.length; j++) {
+        let item = (
+            <Chip label={items[j]} sx={{ mr: 1, mt: 1, backgroundColor: "white" }} variant="outlined" />
+        )
+        chips.push(item)
+    }
+
+    return chips;
+}
+
+function addSkills() {
+    let skills = [];
+
+    for (let i = 0; i < data.length; i++) {
+        let title = (
+            <Typography variant="body1" sx={{ color: '#212529' }}>
+                {data[i].title}
+            </Typography>
+        );
+
+        skills.push(title)
+
+        let items = data[i].items;
+
+        let chipsDiv = (
+            <div style={{ display: "flex", flexWrap: "wrap" }}>
+                {addChips(items)}
+            </div>
+        )
+
+        skills.push(chipsDiv);
+
+
+        if (i < data.length - 1) {
+            let divider = (
+                <Divider sx={{ mt: 3, mb: 3 }} />
+            )
+            skills.push(divider)
+        }
+    }
+    return skills;
+}
 
 function Skills() {
     return (
@@ -197,33 +131,24 @@ function Skills() {
                 Skills
             </Typography>
 
-            <Typography
-                variant="body1"
-                sx={{ color: '#212529', paddingBottom: "40px", fontSize: "18px" }}
-
-            >
-                Over the last few years I have worked with a wide range of technologies for research, personal projects, and coursework. As I have gained more experience, it has become easier and easier to pick up new computer languages and frameworks.
+            <Typography variant="body1" >
+                Over the last few years I have worked with a wide range of technologies for research, personal projects, and coursework.
             </Typography>
 
-            <Paper elevation={3}>
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
-                    columnGap: '100px',
-                    rowGap: '50px',
-                    paddingTop: "60px",
-                    paddingBottom: "60px",
-                    paddingLeft: "60px",
-                    paddingRight: "60px"
-                }}>
-
-
-
-                    {createLogos()}
-
-
-                </div>
+            <Paper sx={{ padding: "7%", mt: 3, mb: 3 }}>
+                {addSkills()}
             </Paper>
+
+            <Typography variant="body1">
+                During my PhD I also developed a wide range of skills that are directly relevant to software engineering positions. These include:
+
+            </Typography>
+
+            <List sx={{ listStyleType: 'disc', pl: 4 }}>
+
+                {addPhDSkills()}
+            </List>
+
         </div>
     );
 }
