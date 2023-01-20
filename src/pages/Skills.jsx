@@ -8,44 +8,8 @@ import {
     ListItem
 } from '@mui/material';
 
-// others to add - GDB, editors such as VIM, VsCode...
-
-let data = [
-    {
-        title: "Programming Languages",
-        items: ["Java", "Python", "JavaScript", "C++", "C", "MATLAB", "R",
-            "Go", "Arduino", "IDL", "Fortran"]
-    },
-    {
-        title: "Web Development",
-        items: ["HTML", "CSS", "React", "Node.js", "Express", "REST API",
-            "JSON", "DOM", "AJAX", "Material UI",
-            "Bootstrap", "React Router", "D3", "Leaflet.js", "Charts.js"]
-    },
-    {
-        title: "Databases",
-        items: ["SQL", "MongoDB", "Firebase", "Neo4j"]
-    },
-    {
-        title: "Data Science",
-        items: ["Spark", "Pandas", "NumPy", "Matplotlib", "Seaborn",
-            "Scikit-learn", "MxNet"]
-    },
-    {
-        title: "Cloud",
-        items: ["AWS Cloud Practitioner", "RDS", "EC2", "EMR"]
-    },
-    {
-        title: "Tools",
-        items: ["Git", "Vim", "GDB", "Linux Terminal", "LaTex", "JUnit", "Visual Studio", "Eclipse", "IntelliJ"]
-    },
-    {
-        title: "Methodologies",
-        items: ["Reading Documentation", "Agile Development", "TTD (Test Driven Development)",
-            "Modularity", "Design Patterns", "N-Tier architecture",
-            "Scalable Systems"]
-    },
-]
+import { grey } from '@mui/material/colors';
+import {skillsData} from '../data/skillsData.js'
 
 let PhDSkills = [
     "Ability to learn quickly",
@@ -78,7 +42,7 @@ function addChips(items) {
     let chips = [];
     for (let j = 0; j < items.length; j++) {
         let item = (
-            <Chip label={items[j]} sx={{ mr: 1, mt: 1, backgroundColor: "white" }} variant="outlined" />
+            <Chip label={items[j]} sx={{ mr: 1, mt: 1, backgroundColor: grey[100]}} variant="outlined" />
         )
         chips.push(item)
     }
@@ -89,16 +53,16 @@ function addChips(items) {
 function addSkills() {
     let skills = [];
 
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < skillsData.length; i++) {
         let title = (
             <Typography variant="body1" sx={{ color: '#212529' }}>
-                {data[i].title}
+                {skillsData[i].title}
             </Typography>
         );
 
         skills.push(title)
 
-        let items = data[i].items;
+        let items = skillsData[i].items;
 
         let chipsDiv = (
             <div style={{ display: "flex", flexWrap: "wrap" }}>
@@ -109,9 +73,9 @@ function addSkills() {
         skills.push(chipsDiv);
 
 
-        if (i < data.length - 1) {
+        if (i < skillsData.length - 1) {
             let divider = (
-                <Divider sx={{ mt: 3, mb: 3 }} />
+                <Divider sx={{ mt: 4, mb: 1 }} />
             )
             skills.push(divider)
         }
@@ -145,7 +109,6 @@ function Skills() {
             </Typography>
 
             <List sx={{ listStyleType: 'disc', pl: 4 }}>
-
                 {addPhDSkills()}
             </List>
 
