@@ -31,7 +31,7 @@ const projectsData = [
         url: "cip"
     },
     {
-        title: "FIFA World Cup",
+        title: "FIFA World Cups",
         img: "fifa.png",
         url: "fifa"
     },
@@ -70,7 +70,9 @@ const projectsData = [
 
 function createCard(title, url, img) {
 
-    const image = require(`../images/projects/${img}`)
+    let image = require(`../images/projects/${img}`)
+
+    // have function that returns image 
 
     return (
         <div >

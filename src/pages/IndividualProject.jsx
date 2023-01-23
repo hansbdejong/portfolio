@@ -9,10 +9,15 @@ import {
 } from '@mui/material';
 
 import { useParams, useHistory } from "react-router-dom";
+
+// data imports
 import { courseProjects } from '../data/courseProjects.js'
+import { quaeroData } from '../data/quaeroData.js'
+import { cipData } from '../data/cipData.js'
+import { fifaData } from '../data/fifaData.js'
 
+//import pumping from '../images/pumping3.jpg'; // with import
 
-import pumping from '../images/pumping3.jpg'; // with import
 import { grey } from '@mui/material/colors';
 
 import ArticleIcon from '@mui/icons-material/Article';
@@ -24,7 +29,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 let data = {}
 
 function IndividualProject() {
-    data = courseProjects;
+    data = fifaData;
     let { id } = useParams();
     const history = useHistory()
 
@@ -177,8 +182,8 @@ function addImagesWithCaptions(data) {
 
     if(images){
         for(let i = 0; i < images.length; i++){
-            const imageFromUrl = require(`../images/${images[i].url}`)
-            const caption = images[i].caption
+            let imageFromUrl = require(`../images/${images[i].url}`)
+            let caption = images[i].caption
 
             let image = (
                 <div style={{
@@ -206,7 +211,7 @@ function addImagesWithCaptions(data) {
                         />
                     </div>
         
-                    <Typography variant="body1"
+                    <Typography variant="body2"
                         color="textSecondary"
                         style={{
                             width: "75%",
