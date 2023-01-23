@@ -76,7 +76,8 @@ function createCard(title, url, img) {
 
     return (
         <div >
-            <Card style={{ position: 'relative' }}>
+            <Card variant="outlined"
+                style={{ position: 'relative', border: `1px solid ${grey[500]}` }} >
 
                 <CardActionArea
                     component={Link}
@@ -98,7 +99,7 @@ function createCard(title, url, img) {
 
                     />
 
-                    <Typography variant="h5" sx={{
+                    <Typography variant="h6" sx={{
                         fontSize: 18,
                         textAlign: "center", pt: 3, pb: 3
                     }}>
@@ -144,6 +145,7 @@ function createCards() {
 
 function Projects() {
     return (
+
         <div style={{ width: "85%", margin: "auto", paddingBottom: "60px" }}>
             <Typography
                 variant="h3"
@@ -158,15 +160,17 @@ function Projects() {
                 variant="body1"
                 gutterBottom
             >
-                From building a search engine from scratch to designing and constructing novel scientific instrumentation, I have thoroughly enjoyed the process of creating. 
+                From building a search engine from scratch to designing and constructing novel scientific instrumentation, I have thoroughly enjoyed the process of creating.
             </Typography>
-            
-            
-            <Grid container spacing={3} sx={{pt: 5}}>
+
+
+            <Grid container spacing={5} sx={{ pt: 5 }} >
                 {createCards()}
             </Grid>
 
+
         </div >
+
     );
 }
 

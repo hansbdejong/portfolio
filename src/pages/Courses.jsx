@@ -59,10 +59,9 @@ function Courses() {
 
             <Typography
                 variant="body1"
-                gutterBottom
+                sx={{mb:3}}
             >
-
-                I have thoroughly enjoyed studying Computer Science and have recieved top grades (A/A+) in all courses.
+                I have thoroughly enjoyed studying Computer Science at the University of Pennsylvania and Stanford and have recieved top grades (A/A+) in all courses.
             </Typography>
 
             {createAccordions()}

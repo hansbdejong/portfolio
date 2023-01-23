@@ -28,13 +28,14 @@ import {
 function App() {
   // default padding: 24px
 
+  //"#E7EBF0" 
   return (
     <HashRouter>
       <ScrollToTop />
-      <div style={{ backgroundColor: grey[50] }}>
+      <div style={{ backgroundColor: grey[50]}}>
         <Box sx={{ display: 'flex' }}>
           <SideBar />
-          <Box component="main" sx={{ flexGrow: 1, p: 3, bgcolor: "x333333" }} >
+          <Box component="main" sx={{ flexGrow: 1, p: 3}} >
             <Switch>
               <Redirect exact path="/" to="/about-me" />
               <Route path="/about-me" render={() => <MyStory />} />

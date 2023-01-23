@@ -12,6 +12,7 @@ import { grey } from '@mui/material/colors';
 import {skillsData} from '../data/skillsData.js'
 
 let PhDSkills = [
+    "Problem solving",
     "Ability to learn quickly",
     "Willingness to work hard and work under pressure",
     "Ability to work in a collaborative, team-oriented environment",
@@ -104,7 +105,7 @@ function Skills() {
             </Paper>
 
             <Typography variant="body1">
-                During my PhD I also developed a wide range of skills that are directly relevant to software engineering positions. These include:
+                During my PhD at Stanford I also developed a wide range of skills that are directly relevant to software engineering positions. These include:
 
             </Typography>
 

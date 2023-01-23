@@ -5,7 +5,8 @@ import {
     Link,
     Grid,
     List,
-    ListItem
+    ListItem,
+    Divider
 } from '@mui/material';
 
 import { useParams, useHistory } from "react-router-dom";
@@ -15,6 +16,9 @@ import { courseProjects } from '../data/courseProjects.js'
 import { quaeroData } from '../data/quaeroData.js'
 import { cipData } from '../data/cipData.js'
 import { fifaData } from '../data/fifaData.js'
+import { datePickerData } from '../data/datePickerData.js'
+import { photoAppData } from '../data/photoAppData.js'
+import { breathingPlanetData } from '../data/breathingPlanetData.js'
 
 //import pumping from '../images/pumping3.jpg'; // with import
 
@@ -29,7 +33,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 let data = {}
 
 function IndividualProject() {
-    data = fifaData;
+    data = breathingPlanetData;
     let { id } = useParams();
     const history = useHistory()
 
@@ -59,8 +63,18 @@ function IndividualProject() {
 
                 </Grid>
 
+                <Divider style={{marginTop: "30px", marginBottom: "30px"}} />
+                
+                <Typography
+                variant="h5"
+                gutterTop
+                sx={{ color: '#212529'}}
+            >
+                ScreenShots
+            </Typography>
+
                 {addImagesWithCaptions(data)}
-               
+
 
             </div >
         </div>
@@ -171,7 +185,7 @@ function createIcon(type) {
         return <GitHubIcon fontSize="medium" />
     } else if (type === "publication") {
         return <ArticleIcon fontSize="medium" />
-    } 
+    }
 
     return <YouTubeIcon fontSize="medium" />
 }
@@ -180,8 +194,8 @@ function addImagesWithCaptions(data) {
     let images = data.images;
     let toReturn = [];
 
-    if(images){
-        for(let i = 0; i < images.length; i++){
+    if (images) {
+        for (let i = 0; i < images.length; i++) {
             let imageFromUrl = require(`../images/${images[i].url}`)
             let caption = images[i].caption
 
@@ -193,12 +207,12 @@ function addImagesWithCaptions(data) {
                     flexDirection: "column",
                     marginTop: "60px",
                 }}>
-        
+
                     <div style={{
-                        border: `1px solid ${grey[300]}`,
-                        width: "75%",
+                        border: `1px solid ${grey[400]}`,
+                        width: "85%",
                         padding: "3px",
-        
+
                     }}>
                         <img
                             alt=""
@@ -210,19 +224,19 @@ function addImagesWithCaptions(data) {
                             src={imageFromUrl}
                         />
                     </div>
-        
+
                     <Typography variant="body2"
                         color="textSecondary"
                         style={{
-                            width: "75%",
+                            width: "85%",
                             //border: "1px solid black",
                             paddingLeft: "3px",
                             paddingRight: "3px"
-        
+
                         }}>
-                       {caption}
+                        {caption}
                     </Typography>
-        
+
                 </div>
 
             )
@@ -278,38 +292,4 @@ function addParagraphs(data) {
 
     return paragraphs;
 }
-
-
-
-
-
-
-
-
-
-// let workingData = {};
-
-//     for (let i = 0; i < data.length; i++) {
-//         if (data[i].title === id) {
-//             workingData = data[i];
-//             break;
-//         }
-//     }
-
-//     if (Object.keys(workingData).length === 0) {
-//         console.log("No data!");
-//     } else {
-//         console.log(workingData.title);
-//     }
-
-
-// let data = [
-//     {
-//         title: "story1",
-//         story: "this is story1"
-//     },
-//     {
-//         title: "story2",
-//         story: "this is story2"
-//     }];
 

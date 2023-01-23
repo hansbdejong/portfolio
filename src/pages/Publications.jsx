@@ -113,9 +113,18 @@ function Publications() {
                <Typography
                 variant="h3"
                 align='center'
+                gutterBottom
                 sx={{ color: '#212529', fontWeight: 300 }}
             >
                 Publications
+            </Typography>
+
+            <Typography
+                variant="body1"
+                gutterBottom
+            >
+
+                During my PhD at Stanford I built computer models, collected and analyzed field data, and processed large satellite-derived datasets to study the impacts of climate change on the Southern Ocean (Antarctica).
             </Typography>
 
             {createPubCards()}
