@@ -18,7 +18,8 @@ import {
   HashRouter,
   Switch,
   Route,
-  Redirect
+  Redirect,
+  BrowserRouter
 } from 'react-router-dom';
 
 import {
@@ -30,7 +31,7 @@ function App() {
 
   //"#E7EBF0" 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <ScrollToTop />
       <div style={{ backgroundColor: grey[50]}}>
         <Box sx={{ display: 'flex' }}>
@@ -51,7 +52,7 @@ function App() {
         </Box>
 
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
