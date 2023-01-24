@@ -51,7 +51,7 @@ const projectsData = [
         url: "water-sampler"
     },
     {
-        title: "Flight Delay Predictions",
+        title: "Predicting Flight Delays",
         img: "flights3.png",
         url: "flight-delays"
     },
