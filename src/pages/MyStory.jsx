@@ -69,7 +69,7 @@ function MyStory() {
 
             <Typography
                 variant="body1"
-                sx={{ color: '#212529', fontSize: "18px" }}
+                // sx={{ color: '#212529', fontSize: "18px" }}
                 gutterBottom
             >
                 <p>I am a Computer Science master’s student at the <span style={{ fontWeight: 600 }}>University of Pennsylvania</span> and am launching a career change from earth science research to technology.</p>

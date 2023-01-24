@@ -315,11 +315,13 @@ function addParagraphs(data) {
     let paragraphArray = data.paragraphs;
     let paragraphs = [];
 
+    //color: '#212529', fontSize: "18px",
+
     for (let i = 0; i < paragraphArray.length; i++) {
         let paragraph = (
             <Typography
                 variant="body1"
-                sx={{ color: '#212529', fontSize: "18px", pt: 2 }}
+                sx={{ pt: 2 }}
             >
                 {paragraphArray[i]}
             </Typography>

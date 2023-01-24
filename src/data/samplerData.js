@@ -5,7 +5,9 @@ export const samplerData =
         [
             "We studied the impact of climate change on coral reefs in the Chagos Archipelago as part of the Bertarelli Program in Marine Science. To monitor coral reef health, we needed to collect water samples above the reef every two hours for days at a time. Rather than stay up all night on rafts, we obtained a grant to design and build a submersible autonomous water sampler.",
             "We also designed and built an autonomous pumping system. Measurements of net community production and net community calcification are used as important indicators of coral reef health. A novel approach is to measure pH and oxygen concentrations at two depths above the reef. To ensure that these measurements are extremely precise, we use a single pH and oxygen sensor, hence the need for a custom pumping system.",
-            "In both projects, I worked closely with our research engineer on the hardware components and programmed the microcontroller."],
+            "In both projects, I worked closely with our research engineer on the hardware components and programmed the microcontroller.",
+            "We published our designs in the peer-reviewed journal HardwareX.",
+        ],
     skills:
         [
             "Arduino Programming",

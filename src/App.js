@@ -15,7 +15,6 @@ import ScrollToTop from './components/ScrollToTop';
 import IndividualProject from './pages/IndividualProject';
 
 import {
-  HashRouter,
   Switch,
   Route,
   Redirect,
