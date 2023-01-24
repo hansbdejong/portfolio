@@ -2,13 +2,14 @@ export const skillsData = [
     {
         title: "Programming Languages",
         items: ["Java", "Python", "JavaScript", "C++", "C", "MATLAB", "R",
-            "Go", "Arduino", "IDL", "Fortran"]
+            "Golang", "Arduino", "IDL", "Fortran"]
     },
     {
         title: "Web Development",
-        items: ["HTML", "CSS", "React", "Node.js", "Express", "REST API",
-            "JSON", "DOM", "AJAX", "Material UI",
-            "Bootstrap", "React Router", "D3", "Leaflet.js", "Charts.js"]
+        items: ["HTML", "CSS", "React","JSX", "Node.js", "Express", "REST API",
+            "JSON", "DOM", "AJAX", "Material UI", "Model-View-Controller",
+            "Responsive Web Design", "Bootstrap", "React Router", "D3", 
+            "Leaflet.js", "Charts.js"]
     },
     {
         title: "Databases",
@@ -25,12 +26,12 @@ export const skillsData = [
     },
     {
         title: "Tools",
-        items: ["Git", "Vim", "GDB", "Linux Terminal", "LaTex", "JUnit", "Visual Studio", "Eclipse", "IntelliJ"]
+        items: ["Git", "Vim", "GDB", "Valgrind", "Linux Terminal", "LaTex", "JUnit", "Visual Studio", "Eclipse", "IntelliJ"]
     },
     {
         title: "Methodologies",
         items: ["Reading Documentation", "Agile Development", "TTD (Test Driven Development)",
             "Modularity", "Design Patterns", "N-Tier architecture",
-            "Scalable Systems"]
+            "Distributed Systems", "Multithreading", "Event-Driven Programming"]
     },
 ]

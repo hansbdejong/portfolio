@@ -3,7 +3,7 @@ export const fifaData =
     title: "FIFA World Cups",
     paragraphs:
         [
-            "For the course Databases and Information Systems (CIS 550), we designed and built a full stack web application to query and display data from all World Cups.  An experienced teaching assistant for this course called our project insane, telling us that our project was the best project they had ever seen for this course. I took the lead for this project.",
+            'For the course Databases and Information Systems (CIS 550), we designed and built a full stack web application to query and display data from all World Cups.  An experienced teaching assistant for this course called our project "insane", telling us that our project was the best project they had ever seen for this course. I took the lead for this project.',
             "We cleaned and merged datasets from multiple sources (including web scraping) and then designed and created our SQL database that we deployed on AWS RDS. The frontend was built using React and Material UI. Users can explore past World Cup results, zoom in to individual match statistics, find player and country statistics, explore individual stadiums, and gain insights such as top scorers and timing of goals."
         ],
     skills:
