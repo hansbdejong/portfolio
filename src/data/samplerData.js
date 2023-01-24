@@ -39,10 +39,10 @@ export const samplerData =
     ],
 
     links: [
-        { url: "https://hansbdejong.github.io/breathing-planet/atmosphere.html", label: "Planet Demo", type: "publication" },
-        { url: "https://hansbdejong.github.io/breathing-coral-reefs/", label: "Coral Demo", type: "publication" },
-        { url: "https://github.com/hansbdejong/breathing-planet", label: "Planet Repo", type: "github" },
-        { url: "https://github.com/hansbdejong/breathing-coral-reefs", label: "Coral Repo", type: "github" },
+        { url: "https://www.sciencedirect.com/science/article/pii/S2468067221000262#s0055", label: "Sampler Paper", type: "publication" },
+        { url: "https://www.sciencedirect.com/science/article/pii/S2468067220300638", label: "AutoPump Paper", type: "publication" },
+        { url: "https://github.com/hansbdejong/AutoSampler-publication-repository", label: "Sampler Repo", type: "github" },
+        { url: "https://github.com/hansbdejong/AutoPump-publication-repository", label: "AutoPump Repo", type: "github" },
     ]
 
 }

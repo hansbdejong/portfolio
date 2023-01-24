@@ -12,7 +12,7 @@ import {
 import { useParams, useHistory } from "react-router-dom";
 
 // data imports
-import { courseProjects } from '../data/courseProjects.js'
+import { courseProjectsData } from '../data/courseProjectsData.js'
 import { quaeroData } from '../data/quaeroData.js'
 import { cipData } from '../data/cipData.js'
 import { fifaData } from '../data/fifaData.js'
@@ -35,8 +35,40 @@ import LaunchIcon from '@mui/icons-material/Launch';
 let data = {}
 
 function IndividualProject() {
-    data = flightsData;
+
     let { id } = useParams();
+
+    switch (id) {
+        case 'quaero':
+            data = quaeroData;
+            break;
+        case 'cip':
+            data = cipData;
+            break;
+        case 'fifa':
+            data = fifaData;
+            break
+        case 'photo-app':
+            data = photoAppData;
+            break;
+        case 'breathing-planet':
+            data = breathingPlanetData;
+            break;
+        case 'water-sampler':
+            data = samplerData;
+            break
+        case 'flight-delays':
+            data = flightsData;
+            break;
+        case 'date-picker':
+            data = datePickerData;
+            break
+        default:
+            data = courseProjectsData;
+    }
+
+
+
     const history = useHistory()
 
     return (
@@ -65,15 +97,15 @@ function IndividualProject() {
 
                 </Grid>
 
-                <Divider style={{marginTop: "30px", marginBottom: "30px"}} />
-                
+                <Divider style={{ marginTop: "30px", marginBottom: "30px" }} />
+
                 <Typography
-                variant="h5"
-                gutterTop
-                sx={{ color: '#212529'}}
-            >
-                ScreenShots
-            </Typography>
+                    variant="h5"
+                    gutterTop
+                    sx={{ color: '#212529' }}
+                >
+                    ScreenShots
+                </Typography>
 
                 {addImagesWithCaptions(data)}
 
@@ -84,6 +116,9 @@ function IndividualProject() {
 }
 
 export default IndividualProject;
+
+
+// uses the params to set the data
 
 
 

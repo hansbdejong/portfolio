@@ -1,4 +1,4 @@
-export const courseProjects =
+export const courseProjectsData =
 {
     title: "Course Projects",
     paragraphs:
@@ -38,17 +38,11 @@ export const courseProjects =
         {
             url: "projects/course-projects.png",
             caption: "Roadmap for data structures course"
-        },
-        {
-            url: "projects/fifa.png",
-            caption: "Go Messi!"
-
         }
     ],
 
     links: [
-        { url: "https://google.com", label: "GitHub Repo", type: "github" },
-        { url: "https://google.com", label: "Video Demo", type: "publication" },
+       
     ]
 
 }
