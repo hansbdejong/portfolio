@@ -26,7 +26,7 @@ export const skillsData = [
     },
     {
         title: "Tools",
-        items: ["Git", "Vim", "GDB", "Valgrind", "Linux Terminal", "LaTex", "JUnit", "Visual Studio", "Eclipse", "IntelliJ"]
+        items: ["Git", "Vim", "GDB", "Valgrind", "Linux Terminal", "LaTex", "JUnit", "Visual Studio", "Eclipse", "IntelliJ", "Docker"]
     },
     {
         title: "Methodologies",
