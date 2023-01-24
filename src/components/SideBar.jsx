@@ -12,7 +12,6 @@ import profilePic from '../images/Hans.jpg'; // with import
 import './style.css';
 
 
-
 export default function SideBar() {
 
     const menuItems = [
@@ -99,7 +98,7 @@ export default function SideBar() {
                             }}
                         >
                             <Typography
-                                className={location.pathname === item.path ? "myClass" : null} 
+                                className={location.pathname.startsWith(item.path)  ? "myClass" : null} 
                                 variant="body1"
                                 fontSize="18px">
                                 {item.text}

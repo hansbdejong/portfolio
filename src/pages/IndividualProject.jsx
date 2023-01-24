@@ -20,8 +20,9 @@ import { datePickerData } from '../data/datePickerData.js'
 import { photoAppData } from '../data/photoAppData.js'
 import { breathingPlanetData } from '../data/breathingPlanetData.js'
 import { samplerData } from '../data/samplerData.js'
+import { flightsData } from '../data/flightsData.js'
 
-//import pumping from '../images/pumping3.jpg'; // with import
+
 
 import { grey } from '@mui/material/colors';
 
@@ -34,7 +35,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 let data = {}
 
 function IndividualProject() {
-    data = samplerData;
+    data = flightsData;
     let { id } = useParams();
     const history = useHistory()
 
