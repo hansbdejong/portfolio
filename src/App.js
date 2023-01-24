@@ -17,7 +17,6 @@ import IndividualProject from './pages/IndividualProject';
 import {
   Switch,
   Route,
-  Redirect,
   BrowserRouter
 } from 'react-router-dom';
 
