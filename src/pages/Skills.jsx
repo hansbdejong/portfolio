@@ -106,7 +106,6 @@ function Skills() {
 
             <Typography variant="body1">
                 During my PhD at Stanford I also developed a wide range of skills that are directly relevant to software engineering positions. These include:
-
             </Typography>
 
             <List sx={{ listStyleType: 'disc', pl: 4 }}>

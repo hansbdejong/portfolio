@@ -17,7 +17,7 @@ export default function SideBar() {
     const menuItems = [
         {
             text: 'About Me',
-            path: '/about-me'
+            path: '/'
         },
         {
             text: 'Projects',
@@ -98,7 +98,7 @@ export default function SideBar() {
                             }}
                         >
                             <Typography
-                                className={location.pathname.startsWith(item.path)  ? "myClass" : null} 
+                                className={getClassName(location.pathname, item.path)} 
                                 variant="body1"
                                 fontSize="18px">
                                 {item.text}
@@ -111,4 +111,26 @@ export default function SideBar() {
         </Drawer>
     );
 }
+
+
+// sets the current sidebar location to light blue color
+function getClassName(locationPathname, itemPath){
+    
+    // ensures that all project pages are part of the "Projects" tab.
+    if(locationPathname.startsWith("/projects")){
+        if (itemPath === "/projects"){
+            return "myClass"
+        }
+    }
+
+    // exact matches for all other tabs
+    if (locationPathname === itemPath){
+        return "myClass"
+    } else {
+        return null;
+    }
+}
+
+//location.pathname.startsWith(item.path)
+
 

@@ -37,8 +37,7 @@ function App() {
           <SideBar />
           <Box component="main" sx={{ flexGrow: 1, p: 3}} >
             <Switch>
-              <Redirect exact path="/" to="/about-me" />
-              <Route path="/about-me" render={() => <MyStory />} />
+              <Route exact path="/" render={() => <MyStory />} />
               <Route path="/projects/:id" render={() => <IndividualProject />} />
               <Route path="/projects" render={() => <Projects />} />
               <Route path="/skills" render={() => <Skills />} />
