@@ -3,7 +3,7 @@ export const cipData =
     title: "Code in Place",
     paragraphs:
         [
-        "Code in Place is a free online python course hosted by Stanford University that has taught tens of thousands of students worldwide the fundamentals of computer programming.",
+        "Code in Place is a free online Python course hosted by Stanford University that has taught tens of thousands of students worldwide the fundamentals of computer programming.",
         "For the next iteration of Code in Place, we are building a new Learning Management System to be deployed in 2023. Using React and Firebase, I built the login page and the admin system to manage 1000 teachers and 10,000 students from the web. I then designed and built a new user experience for the learning center, where instructors can add/edit course content such as videos and readings using a rich text editor."    
         ],
     skills:

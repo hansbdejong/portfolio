@@ -1,8 +1,8 @@
 export const skillsData = [
     {
         title: "Programming Languages",
-        items: ["Java", "Python", "JavaScript", "C++", "C", "MATLAB", "R",
-            "Golang", "Arduino", "IDL", "Fortran"]
+        items: ["Java", "Python", "JavaScript", "C++", "C", "Go","MATLAB", "R",
+             "Arduino", "IDL", "Fortran"]
     },
     {
         title: "Web Development",
@@ -13,20 +13,20 @@ export const skillsData = [
     },
     {
         title: "Databases",
-        items: ["SQL", "MongoDB", "Firebase", "Neo4j"]
+        items: ["SQL", "MongoDB", "Neo4j"]
     },
     {
         title: "Data Science",
-        items: ["Spark", "Pandas", "NumPy", "Matplotlib", "Seaborn",
-            "Scikit-learn", "MxNet"]
+        items: ["Apache Spark", "Pandas", "NumPy", "Matplotlib", "Seaborn",
+            "Scikit-learn", "Apache MXNet"]
     },
     {
         title: "Cloud",
-        items: ["AWS Cloud Practitioner", "RDS", "EC2", "EMR"]
+        items: ["AWS Certified Cloud Practitioner", "RDS", "EC2", "EMR", "Firebase"]
     },
     {
         title: "Tools",
-        items: ["Git", "Vim", "GDB", "Valgrind", "Linux Terminal", "LaTex", "JUnit", "Visual Studio", "Eclipse", "IntelliJ", "Docker"]
+        items: ["Git", "Vim", "GNU Debugger", "Valgrind", "Linux Terminal", "LaTex", "JUnit", "Visual Studio", "Eclipse", "IntelliJ", "Docker"]
     },
     {
         title: "Methodologies",
