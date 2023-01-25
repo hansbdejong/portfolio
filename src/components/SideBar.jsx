@@ -46,7 +46,7 @@ export default function SideBar() {
     const location = useLocation();
     const history = useHistory()
 
-    let drawerWidth = 300;
+    let drawerWidth = 260;
 
 
     return (
@@ -54,7 +54,9 @@ export default function SideBar() {
             variant="permanent"
             sx={{
                 border: 0,
+                width: drawerWidth,
                 flexShrink: 0,
+                [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box', border: 0 },
             }}
         >
             <Box sx={{ overflow: 'auto', bgcolor: "#282C34", border: 0 }} 
@@ -70,8 +72,8 @@ export default function SideBar() {
                             border: `3px solid ${grey[400]}`
                         }}
                         loading="lazy"
-                        height="220"
-                        width="220"
+                        height="200"
+                        width="200"
                         src={profilePic}
                     />
                 </div>
@@ -81,7 +83,7 @@ export default function SideBar() {
                         paddingTop: "10px",
                         color: grey[200], textShadow: "2px 2px 3px rgba(0, 0, 0, 0.3)",
                         fontSize: "24px",
-                        marginLeft: "37px"
+                        paddingLeft: "30px"
                     }}>
                     Hans B DeJong
                 </Typography>
@@ -91,7 +93,7 @@ export default function SideBar() {
                     {menuItems.map((item =>
                         <ListItem button disableRipple
                             key = {item.text}
-                            style={{ paddingLeft: "37px", color: "#999999" }}
+                            style={{ paddingLeft: "30px", color: "#999999" }}
                             onClick={() => history.push(item.path)}
                             sx={{
                                 '&:hover': {
