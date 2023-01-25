@@ -57,7 +57,7 @@ export default function SideBar() {
             }}
         >
             <Box sx={{ overflow: 'auto', bgcolor: "#282C34" }} 
-            style={{ height: "100%", paddingBottom: "40px" }}>
+            style={{ height: "100%"}}>
 
                 <div style={{ display: "flex", justifyContent: "center" }}>
                     <img

@@ -31,10 +31,10 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div style={{ backgroundColor: grey[50]}}>
+      <div style={{ backgroundColor: "#282C34"}}>
         <Box sx={{ display: 'flex' }}>
           <SideBar />
-          <Box component="main" sx={{ flexGrow: 1, p: 3}} >
+          <Box component="main" sx={{ flexGrow: 1, p: 3}} style={{backgroundColor: grey[50]}} >
             <Switch>
               <Route exact path="/" render={() => <MyStory />} />
               <Route path="/projects/:id" render={() => <IndividualProject />} />
