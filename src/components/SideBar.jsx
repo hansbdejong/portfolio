@@ -52,14 +52,13 @@ export default function SideBar() {
     return (
         <Drawer
             variant="permanent"
-            sx={{
-                border: 0,
+            sx={{ 
                 width: drawerWidth,
                 flexShrink: 0,
-                [`& .MuiDrawer-paper`]: { width: drawerWidth, border: 0 },
+                [`& .MuiDrawer-paper`]: { width: drawerWidth},
             }}
         >
-            <Box sx={{ overflow: 'auto', bgcolor: "#282C34", border: 0 }} 
+            <Box sx={{ overflow: 'auto', bgcolor: "#282C34" }} 
             style={{ height: "100%"}}>
 
                 <div style={{ display: "flex", justifyContent: "center" }}>
