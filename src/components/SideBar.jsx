@@ -47,6 +47,8 @@ export default function SideBar() {
     const history = useHistory()
 
     let drawerWidth = 300;
+    let windowHeight = window.innerHeight;
+
     return (
         <Drawer
             variant="permanent"
@@ -58,7 +60,7 @@ export default function SideBar() {
             }}
         >
             <Box sx={{ overflow: 'auto', bgcolor: "#282C34", border: 0 }} 
-            style={{ height: "100%"}}>
+            style={{ height: windowHeight}}>
 
                 <div style={{ display: "flex", justifyContent: "center" }}>
                     <img
