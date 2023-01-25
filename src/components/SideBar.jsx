@@ -56,7 +56,7 @@ export default function SideBar() {
                 [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
             }}
         >
-            <Box sx={{ overflow: 'auto', bgcolor: "#282C34", border: "1px solid #282C34" }} 
+            <Box sx={{ overflow: 'auto', bgcolor: "#282C34" }} 
             style={{ height: "100%"}}>
 
                 <div style={{ display: "flex", justifyContent: "center" }}>
