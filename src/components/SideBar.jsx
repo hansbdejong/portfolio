@@ -47,20 +47,18 @@ export default function SideBar() {
     const history = useHistory()
 
     let drawerWidth = 300;
-    let windowHeight = window.innerHeight;
+
 
     return (
         <Drawer
             variant="permanent"
             sx={{
                 border: 0,
-                width: drawerWidth,
                 flexShrink: 0,
-                [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
             }}
         >
             <Box sx={{ overflow: 'auto', bgcolor: "#282C34", border: 0 }} 
-            style={{ height: windowHeight}}>
+            style={{ height: "100%"}}>
 
                 <div style={{ display: "flex", justifyContent: "center" }}>
                     <img
