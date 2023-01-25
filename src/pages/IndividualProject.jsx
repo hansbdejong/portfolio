@@ -85,12 +85,12 @@ function IndividualProject() {
 
                 <Grid container spacing={2}>
 
-                    <Grid item xs={6} md={9}>
+                    <Grid item xs={12} md={6} lg={9}>
                         {projectDescription(data)}
                     </Grid>
 
 
-                    <Grid item xs={6} md={3}>
+                    <Grid item xs={12} md={6} lg={3}>
                         {skills(data)}
                         {addLinkButtons(data)}
                     </Grid>
