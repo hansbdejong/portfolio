@@ -31,7 +31,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div style={{ backgroundColor: "#282C34", overscrollBehavior: "none"}}>
+      <div style={{ backgroundColor: "#282C34"}}>
         <Box sx={{ display: 'flex' }}>
           <SideBar />
           <Box component="main" sx={{ flexGrow: 1, p: 3}} style={{backgroundColor: grey[50]}} >

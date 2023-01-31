@@ -6,10 +6,10 @@ export const skillsData = [
     },
     {
         title: "Web Development",
-        items: ["HTML", "CSS", "React","JSX", "Node.js", "Express", "REST API",
+        items: ["HTML", "CSS", "React","JSX", "NodeJS", "Express", "REST API",
             "JSON", "DOM", "AJAX", "Material UI", "Model-View-Controller",
             "Responsive Web Design", "Bootstrap", "React Router", "D3", 
-            "Leaflet.js", "Charts.js"]
+            "LeafletJS", "ChartsJS"]
     },
     {
         title: "Databases",
@@ -32,6 +32,6 @@ export const skillsData = [
         title: "Methodologies",
         items: ["Reading Documentation", "Agile Development", "TTD (Test Driven Development)",
             "Modularity", "Design Patterns", "N-Tier architecture",
-            "Distributed Systems", "Multithreading", "Event-Driven Programming"]
+            "Distributed Systems", "Multithreading", "Event-Driven Programming", "Functional Programming"]
     },
 ]
