@@ -41,7 +41,7 @@ export const samplerData =
     ],
 
     links: [
-        { url: "https://www.sciencedirect.com/science/article/pii/S2468067221000262#s0055", label: "Sampler Paper", type: "publication" },
+        { url: "https://www.sciencedirect.com/science/article/pii/S2468067221000262", label: "Sampler Paper", type: "publication" },
         { url: "https://www.sciencedirect.com/science/article/pii/S2468067220300638", label: "AutoPump Paper", type: "publication" },
         { url: "https://github.com/hansbdejong/AutoSampler-publication-repository", label: "Sampler Repo", type: "github" },
         { url: "https://github.com/hansbdejong/AutoPump-publication-repository", label: "AutoPump Repo", type: "github" },
