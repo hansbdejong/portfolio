@@ -35,13 +35,13 @@ function App() {
       <ScrollToTop />
       <div style={{ backgroundColor: "#282C34" }}>
 
-        <MediaQuery maxWidth={750}>
+        <MediaQuery maxWidth={900}>
           <TopBar />
         </MediaQuery>
 
         <Box sx={{ display: 'flex' }}>
 
-          <MediaQuery minWidth={750}>
+          <MediaQuery minWidth={900}>
             <SideBar />
           </MediaQuery>
 
