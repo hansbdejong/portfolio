@@ -7,8 +7,8 @@ import {
     ListItem
 } from '@mui/material';
 
-
-//import { grey } from '@mui/material/colors';
+import profilePic from '../images/Hans.jpg'; // with import
+import { grey } from '@mui/material/colors';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArticleIcon from '@mui/icons-material/Article';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -36,9 +36,6 @@ let data = {
         ]
 }
 
-// after just a year, taken advanced CS courses designed for advanced undergraduate...
-// I also learned how to handle ambiguity and ....
-// these "soft skills are direclty relevent to tech jobs"
 
 function MyStory() {
     return (
@@ -86,6 +83,23 @@ function MyStory() {
                     </Link>
                 </div>
             </div>
+
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                    <img
+                        alt=""
+                        style={{
+                            // borderRadius: "100%",
+                            objectFit: "cover",
+                            marginTop: "10px",
+                            marginBottom: "10px",
+                            border: `3px solid ${grey[400]}`
+                        }}
+                        loading="lazy"
+                        height="200"
+                        width="200"
+                        src={profilePic}
+                    />
+                </div>
 
 
             {addParagraphs(data)}

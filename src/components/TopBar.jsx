@@ -8,9 +8,11 @@ import FolderIcon from '@mui/icons-material/Folder'; // projects
 import SchoolIcon from '@mui/icons-material/School';  // courses
 import ArticleIcon from '@mui/icons-material/Article'; // publications
 import LightbulbIcon from '@mui/icons-material/Lightbulb'; // skills
+import LinkedInIcon from '@mui/icons-material/LinkedIn'; // linkedIn
+import ContactPageIcon from '@mui/icons-material/ContactPage'; // resume
 
 import { useHistory } from "react-router-dom";
-
+import resume from '../Hans_DeJong_Resume.pdf';
 
 import {
     IconButton,
@@ -20,6 +22,8 @@ import {
     ListItem,
     ListItemButton,
     ListItemText,
+    Divider,
+    Link
 
 } from '@mui/material';
 
@@ -90,9 +94,37 @@ export default function SwipeableTemporaryDrawer() {
                     </ListItem>
                 ))}
             </List>
+            <Divider />
+            <List>
+
+                <Link disablePadding href={resume} target="_blank" underline="none" >
+                    <ListItem key={"Resume"} disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <ContactPageIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Resume" />
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
+
+                <Link disablePadding href="https://www.linkedin.com/in/hansbdejong/"
+                    target="_blank" underline="none" >
+                    <ListItem key={"LinkedIn"} disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <LinkedInIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="LinkedIn" />
+                        </ListItemButton>
+                    </ListItem>
+                </Link>
+
+            </List>
 
 
-        </Box>
+
+        </Box >
     );
 
     let anchor = 'right';
