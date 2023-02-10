@@ -1,3 +1,4 @@
+import MediaQuery from 'react-responsive'
 import React from 'react';
 import {
     Typography,
@@ -19,8 +20,8 @@ import resume from '../Hans_DeJong_Resume.pdf';
 let data = {
     paragraphs:
         [
-            "I am an aspiring software engineer with years of experience as an oceanographer and educator that allowed me to develop excellent analytical and communication skills. I graduated in December 2022 from the University of Pennsylvania with a master’s degree in Computer and Information Technology (MCIT) and completed additional graduate level computer science courses at Stanford. I am seeking to combine my scientific and educational experiences with my deepening understanding of technology to join a development team.",
-            "Since enrolling in the MCIT program, I have gained valuable experience and technical skills in distributed systems, databases, computer networks, cybersecurity, artificial intelligence, machine learning, big data, cloud computing, and web applications. My passion for user-centered design and clean/maintainable code elevates my projects to the next level. ",
+            "I am an aspiring software engineer with a PhD in oceanography from Stanford where I analyzed terabytes of data and designed and built novel oceanographic instruments. I have also taught secondary science for six years and developed excellent communication, mentoring, and leadership skills. I graduated in December 2022 from the University of Pennsylvania with a master’s degree in Computer and Information Technology (MCIT) and completed additional graduate level computer science courses at Stanford. I am seeking to combine my scientific and educational expertise with my deepening understanding of technology to join a development team.",
+            "Since enrolling in the MCIT program, I have gained valuable experience and technical skills in distributed systems, databases, computer networks, web applications, cybersecurity, big data analytics, and artificial intelligence. My passion for user-centered design and clean/maintainable code elevates my projects to the next level.",
             "I have also completed a PhD at Stanford University in Oceanography as a National Science Foundation Graduate Research Fellow, where I designed, implemented, and managed complex projects through completion. My research focused on the carbon system in the Ross Sea, Antarctica, which involved collaborative research cruises, computer modelling, and analyzing large satellite-derived and oceanographic datasets. I also designed and built autonomous instruments for ocean acidification research on coral reefs.",
             "I am an experienced educator and recently taught computer science to high school students at the American International School Chennai in India. Collaborating with a Stanford professor, my computer science course was based on CS 106A, taken by over 1000 students at Stanford each year.",
             "Career Highlights:",
@@ -48,7 +49,6 @@ function MyStory() {
             >
                 About Me
             </Typography>
-
 
             <div style={{ display: "flex", justifyContent: "center", paddingBottom: "20px" }}>
                 <div>
@@ -84,11 +84,11 @@ function MyStory() {
                 </div>
             </div>
 
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <MediaQuery maxWidth={900}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
                     <img
                         alt=""
                         style={{
-                            // borderRadius: "100%",
                             objectFit: "cover",
                             marginTop: "10px",
                             marginBottom: "10px",
@@ -100,6 +100,7 @@ function MyStory() {
                         src={profilePic}
                     />
                 </div>
+            </MediaQuery>
 
 
             {addParagraphs(data)}
