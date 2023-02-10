@@ -1,21 +1,26 @@
 import React, { useState } from 'react';
 
 import ListItemIcon from '@mui/material/ListItemIcon';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
+import PersonIcon from '@mui/icons-material/Person';  //aboutme
+import LanguageIcon from '@mui/icons-material/Language'; // adventures
+import FolderIcon from '@mui/icons-material/Folder'; // projects
+import SchoolIcon from '@mui/icons-material/School';  // courses
+import ArticleIcon from '@mui/icons-material/Article'; // publications
+import LightbulbIcon from '@mui/icons-material/Lightbulb'; // skills
+
 import { useHistory } from "react-router-dom";
+
 
 import {
     IconButton,
     Box,
     SwipeableDrawer,
     List,
-    Divider,
     ListItem,
     ListItemButton,
     ListItemText,
-    Typography
+
 } from '@mui/material';
 
 const menuItems = [
@@ -76,6 +81,10 @@ export default function SwipeableTemporaryDrawer() {
                     <ListItem key={item.text} disablePadding
                         onClick={() => history.push(item.path)}>
                         <ListItemButton>
+
+                            <ListItemIcon>
+                                {getIcon(item.text)}
+                            </ListItemIcon>
                             <ListItemText primary={item.text} />
                         </ListItemButton>
                     </ListItem>
@@ -117,6 +126,26 @@ export default function SwipeableTemporaryDrawer() {
 
         </div >
     );
+}
+
+
+function getIcon(text) {
+    switch (text) {
+        case 'About Me':
+            return <PersonIcon />;
+        case 'Projects':
+            return <FolderIcon />;
+        case 'Skills':
+            return <LightbulbIcon />;
+        case 'Courses':
+            return <SchoolIcon />;
+        case 'Publications':
+            return <ArticleIcon />;
+        case 'Adventures':
+            return <LanguageIcon />;
+        default:
+            return <PersonIcon />;
+    }
 }
 
 
