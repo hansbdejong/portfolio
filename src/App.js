@@ -1,8 +1,10 @@
 import React from 'react';
-import { grey, blue, lightBlue, green } from '@mui/material/colors';
+import { grey } from '@mui/material/colors';
 
 // import components
 import SideBar from './components/SideBar';
+import TopBar from './components/TopBar';
+import MediaQuery from 'react-responsive'
 
 // import pages
 import MyStory from './pages/MyStory';
@@ -31,10 +33,19 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div style={{ backgroundColor: "#282C34"}}>
+      <div style={{ backgroundColor: "#282C34" }}>
+
+        <MediaQuery maxWidth={750}>
+          <TopBar />
+        </MediaQuery>
+
         <Box sx={{ display: 'flex' }}>
-          <SideBar />
-          <Box component="main" sx={{ flexGrow: 1, p: 3}} style={{backgroundColor: grey[50]}} >
+
+          <MediaQuery minWidth={750}>
+            <SideBar />
+          </MediaQuery>
+
+          <Box component="main" sx={{ flexGrow: 1, p: 3 }} style={{ backgroundColor: grey[50] }} >
             <Switch>
               <Route exact path="/" render={() => <MyStory />} />
               <Route path="/projects/:id" render={() => <IndividualProject />} />

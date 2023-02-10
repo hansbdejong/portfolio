@@ -200,7 +200,7 @@ function addLinkButtons(data) {
                 <Link rel="noopener" href={url} target="_blank" underline="none">
                     <Button style={{ width: "100%", textTransform: 'none', }}
                         variant="contained"
-                        sx={{ marginBottom: 1 }}>
+                        sx={{ marginBottom: 1, maxWidth: "200px", marginRight:1 }}>
                         {createIcon(type)}
                         <Typography sx={{ paddingLeft: 1 }}>{label}</Typography>
                     </Button>
