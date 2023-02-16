@@ -20,20 +20,14 @@ import resume from '../Hans_DeJong_Resume.pdf';
 let data = {
     paragraphs:
         [
-            "I am an aspiring software engineer with a PhD in oceanography from Stanford where I analyzed terabytes of data and designed and built novel oceanographic instruments. I have also taught secondary science for six years and developed excellent communication, mentoring, and leadership skills. I graduated in December 2022 from the University of Pennsylvania with a master’s degree in Computer and Information Technology (MCIT) and completed additional graduate level computer science courses at Stanford. I am seeking to combine my scientific and educational expertise with my deepening understanding of technology to join a development team.",
-            "Since enrolling in the MCIT program, I have gained valuable experience and technical skills in distributed systems, databases, computer networks, web applications, cybersecurity, big data analytics, and artificial intelligence. My passion for user-centered design and clean/maintainable code elevates my projects to the next level.",
-            "I have also completed a PhD at Stanford University in Oceanography as a National Science Foundation Graduate Research Fellow, where I designed, implemented, and managed complex projects through completion. My research focused on the carbon system in the Ross Sea, Antarctica, which involved collaborative research cruises, computer modelling, and analyzing large satellite-derived and oceanographic datasets. I also designed and built autonomous instruments for ocean acidification research on coral reefs.",
-            "I am an experienced educator and recently taught computer science to high school students at the American International School Chennai in India. Collaborating with a Stanford professor, my computer science course was based on CS 106A, taken by over 1000 students at Stanford each year.",
-            "Career Highlights:",
+            "As a software engineer with a master’s degree in Computer Science from the University of Pennsylvania, I have gained valuable experience and technical skills in distributed systems, databases, computer networks, web applications, computer and network security, big data analytics, and artificial intelligence. Collaborating effectively with others, I have successfully completed multiple team projects and have participated in code reviews. My passion for user-centered design and clean, maintainable code elevates my projects to the next level.",
+	    "In addition to my software engineering experience, I hold a PhD in oceanography from Stanford, where I developed skills highly relevant to software engineering. While analyzing terabytes of data and designing and building novel oceanographic instruments, I honed my problem-solving skills and attention to detail. Through my experience with peer-review, I improved my technical writing, learned how to view feedback as a learning opportunity, and engaged in cognitive conflict to push boundaries and drive progress. I also have a strong track record of initiating, designing, implementing, and managing complex projects to completion and collaborating cross-functionally with fellow students, lab managers, engineers, remote sensing specialists, ship crew members, and faculty across global research institutions.",
+            "As an experienced secondary teacher with Teach For America in Los Angeles and at American International Schools in Asia and Africa, I have developed strong leadership and mentorship skills. I have persevered through challenges and honed my communication skills while explaining complex scientific concepts to students. I believe that a supportive, respectful, and inclusive learning environment is essential for student success, and I actively fostered such an environment in my classrooms. I integrated peer tutoring and group projects to enhance students' collaboration and teamwork skills, and consistently set high expectations while providing strong support.",
+            "With a diverse skill set and a passion for solving complex problems, I am eager to bring my expertise and experience to the software engineering industry. Let's connect to discuss how we can work together to achieve our goals."	
         ],
     skills:
         [
-            "Years of experience solving technically complex problems.",
-            "Strong communication skills such as explaining, public speaking, and technical writing.",
-            "Exceptional ability to learn, process, utilize, and communicate new ideas quickly and effectively.",
-            "Proven track record in collaborative, team-oriented environments.",
-            "Ability to function independently and handle ambiguity.",
-            "Natural leadership abilities.",
+
         ]
 }
 
